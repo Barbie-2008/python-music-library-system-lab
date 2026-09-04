@@ -104,6 +104,15 @@ git checkout -b [name of branch]
 * add_to_artists_count
   * Updates class attribute artists_count
   * Increments artists key by 1, if artist doesn’t exist in artists_count add the key and set it to 1
+## Features
+
+- **Song Object Representation**: Easily instantiate individual song objects with name, artist, and genre attributes.
+- **Automated Global Insights**: Automatically updates library-wide metrics upon the creation of each new song:
+  - **Total Song Count**: Keeps track of the exact number of songs created.
+  - **Unique Genres & Artists**: Automatically catalogs unique lists of all featured artists and musical genres.
+  - **Genre Frequency Tracking**: Counts how many songs belong to each genre (`{"Pop": 5, "Rock": 1}`).
+  - **Artist Output Tracking**: Reveals the number of songs each individual artist is responsible for (`{"Beyonce": 17, "Jay-Z": 40}`).
+
 
 #### Step 4: Push feature branch and open a PR on GitHub
 
